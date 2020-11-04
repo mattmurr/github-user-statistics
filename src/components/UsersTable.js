@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Waypoint } from "react-waypoint";
-import moment from "moment";
 
 const Header = ({ label }) => {
   return (

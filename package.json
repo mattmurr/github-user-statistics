@@ -5,19 +5,16 @@
   "dependencies": {
     "@apollo/client": "^3.2.5",
     "graphql": "^15.4.0",
-    "moment": "^2.29.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
-    "react-waypoint": "^9.0.3",
-    "react-window": "^1.8.6",
-    "react-window-infinite-loader": "^1.0.5"
+    "react-waypoint": "^9.0.3"
   },
   "scripts": {
     "start": "npm run watch:css && react-scripts start",
     "build": "npm run watch:css && react-scripts build",
     "watch:css": "postcss src/styles/global.css -o src/styles/main.css",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [
@@ -38,7 +35,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
-    "github-pages": "^3.0.2",
+    "firebase-tools": "^8.14.1",
     "postcss": "^8.1.4",
     "postcss-cli": "^8.2.0",
     "tailwindcss": "^1.9.6"
