@@ -35,3 +35,4 @@ jobs:
         run: npm run deploy
         env:
           REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
