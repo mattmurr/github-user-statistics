@@ -58,7 +58,7 @@ const App = () => {
   };
 
   return (
-    <div className="container w-2/3 mx-auto">
+    <div>
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
       {data && data.search.edges.length > 0 && (

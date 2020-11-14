@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.2.5",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "eslint-config-prettier": "^6.15.0",
     "graphql": "^15.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -11,14 +14,14 @@
     "react-waypoint": "^9.0.3"
   },
   "scripts": {
-    "start": "npm run watch:css && react-scripts start",
-    "build": "npm run watch:css && react-scripts build",
-    "watch:css": "postcss src/styles/global.css -o src/styles/main.css",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "deploy": "npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [
-      "react-app"
+      "react-app",
+      "prettier"
     ]
   },
   "browserslist": {
@@ -34,10 +37,8 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
+    "eslint-plugin-react": "^7.21.5",
     "firebase-tools": "^8.14.1",
-    "postcss": "^8.1.4",
-    "postcss-cli": "^8.2.0",
-    "tailwindcss": "^1.9.6"
+    "prettier": "^2.1.2"
   }
 }
