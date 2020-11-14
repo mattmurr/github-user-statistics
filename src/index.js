@@ -9,7 +9,6 @@ import {
 import { setContext } from "@apollo/client/link/context";
 import { relayStylePagination } from "@apollo/client/utilities";
 
-import "./styles/main.css";
 import App from "./App";
 
 import * as serviceWorker from "./serviceWorker";
